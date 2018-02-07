@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:ignore="ButtonStyle" >
+    
+    <Button
+        android:id="@+id/add_trust_dev_dlg_btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/msgs_common_dialog_close"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/add_trust_dev_dlg_btn_refresh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/msgs_trust_device_add_new_dev_btn_refresh" />
+    
+    <Button
+        android:id="@+id/add_trust_dev_dlg_btn_ok"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/msgs_common_dialog_add"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<string name="msgs_widget_battery_status_charge_charging">充電中</string>
+   	<string name="msgs_widget_battery_status_charge_discharging">放電中</string>
+   	<string name="msgs_widget_battery_status_charge_full">充電完了</string>
+   	<string name="msgs_widget_battery_status_charge_unknown">不明</string>
+   	<string name="msgs_widget_battery_status_health_dead">不良</string>
+   	<string name="msgs_widget_battery_status_health_good">良好</string>
+   	<string name="msgs_widget_battery_status_health_overvolt">過電圧</string>
+   	<string name="msgs_widget_battery_status_health_overheat">オーバーヒート</string>
+   	<string name="msgs_widget_battery_status_health_failure">故障</string>
+   	<string name="msgs_widget_battery_status_health_unknown">不明</string>
+   	<string name="msgs_widget_battery_status_tempture">°C</string>
+   	
+	<string name="msgs_widget_battery_button_not_functional">「スクリーンロック」が無効なため、画面をロックできません。</string>
+	    
+</resources>

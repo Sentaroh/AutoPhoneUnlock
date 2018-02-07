@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:appv7="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/menu_top_toggle_controller"
+          android:title="@string/msgs_menu_toggle_control_start" 
+          android:icon="@drawable/main_stop_icon_64"
+          appv7:showAsAction="ifRoom|withText"/>
+    
+    <item android:id="@+id/menu_top_log_manage_log"
+          android:title="@string/msgs_log_file_list_manage_logfile" 
+          />
+
+    <item android:id="@+id/menu_top_scan_ble"
+          android:title="@string/msgs_scan_bt_le_device_dlg_menu_title" 
+          />
+    
+    <item android:id="@+id/menu_top_backup_settings"
+          android:title="@string/msgs_menu_backup_settings" 
+          />
+
+    <item android:id="@+id/menu_top_restore_settings"
+          android:title="@string/msgs_menu_restore_settings" 
+          />
+    
+    <item android:id="@+id/menu_top_browse_logfile" 
+          android:title="@string/msgs_menu_browse_logfile" 
+          android:icon="@drawable/ic_32_bw_browse_text"
+          appv7:showAsAction="ifRoom|withText"/>
+
+    <item android:id="@+id/menu_top_settings"
+          android:title="@string/msgs_menu_settings" 
+          android:icon="@android:drawable/ic_menu_preferences"
+          />
+    <item android:id="@+id/menu_top_restart_scheduler"
+          android:title="@string/msgs_menu_restart_scheduler" 
+          />
+    <item android:id="@+id/menu_top_about"
+          android:title="@string/msgs_menu_about_task_scheduler" 
+          android:icon="@android:drawable/ic_menu_info_details"
+          />
+    <item android:id="@+id/menu_top_uninstall"
+          android:title="@string/msgs_menu_uninstall" 
+          />
+    
+</menu>

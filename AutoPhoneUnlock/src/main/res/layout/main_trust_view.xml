@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <TextView
+        android:id="@+id/main_trust_view_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        tools:ignore="HardcodedText" />
+    
+    <LinearLayout
+        android:id="@+id/main_trust_view_option_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <CheckedTextView
+            android:id="@+id/main_trust_view_immediate_lock_when_trusted_device_disconn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center_vertical"
+            android:text="@string/msgs_trust_device_immediate_lock_when_trusted_device_disconn"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <CheckedTextView
+            android:id="@+id/main_trust_view_trust_device_use_delay_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center_vertical"
+            android:text="@string/msgs_trust_device_delay_time_title"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <RadioGroup
+            android:id="@+id/main_trust_view_trust_device_rg_delay_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/main_trust_view_trust_device_rb_delay_time_value2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/msgs_trust_device_delay_time_value2" />
+
+            <RadioButton
+                android:id="@+id/main_trust_view_trust_device_rb_delay_time_value3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/msgs_trust_device_delay_time_value3" />
+
+            <RadioButton
+                android:id="@+id/main_trust_view_trust_device_rb_delay_time_value4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/msgs_trust_device_delay_time_value4" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/main_trust_view_trust_device_screen_lock_use_pswd_reset_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <include layout="@layout/divider_line3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <CheckedTextView
+                    android:id="@+id/main_trust_view_trust_device_screen_lock_use_pswd_reset"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+                    android:gravity="center_vertical"
+                    android:text="@string/msgs_trust_device_screen_lock_use_pswd_reset"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Button
+                    android:id="@+id/main_trust_view_trust_device_screen_lock_pswd_change_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/msgs_trust_device_screen_lock_pswd_change_btn" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/main_trust_view_trust_device_delay_time_spacer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            layout="@layout/main_trust_view_delay_time_ok_cancel" />
+    </LinearLayout>
+    
+    <include layout="@layout/divider_line3" />
+    
+    <LinearLayout
+        android:id="@+id/main_trust_view_trust_device_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/main_trust_view_trust_device_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="@string/msgs_trust_device_list_truet_item_title"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <ListView
+            android:id="@+id/main_trust_view_trust_device_list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fadeScrollbars="false"
+            tools:ignore="NestedWeights" >
+
+        </ListView>
+
+        <include layout="@layout/main_trust_view_context_view" />
+    </LinearLayout>
+
+</LinearLayout>

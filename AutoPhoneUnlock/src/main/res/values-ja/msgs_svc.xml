@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="msgs_svc_termination">スケジューラーが終了しました。</string>
+	<string name="msgs_svc_started">スケジューラーが開始されました。</string>
+	    
+	<string name="msgs_svc_notification_info_battery_title" formatted="false">バッテリー</string>
+	<string name="msgs_svc_notification_info_battery_level" formatted="false">%s%%</string>
+	
+	<string name="msgs_svc_notification_proxmity_count_exceed_line1">一時的に近接センサーによる画面点灯を無効にしました</string>
+	<string name="msgs_svc_notification_proxmity_count_exceed_line2">有効にするにはタップしてください</string>
+	<string name="msgs_svc_notification_proxmity_count_exceed_line_api10">近接センサーは無効です。タップで有効。</string>
+	
+</resources>

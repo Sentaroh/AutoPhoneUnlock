@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msgs_control_wifi">Wireless LAN control</string>
+    <string name="msgs_control_bt">Bluetooth control</string>
+    <string name="msgs_control_screen">Screen control</string>
+    <string name="msgs_control_config_btn">Config</string>
+    
+    <string name="msgs_control_wifi_wifi_on">To turn off the wireless LAN, if does not connect to the access point within a specified time.</string>
+    <string name="msgs_control_wifi_wifi_on_always">Always turn off</string>
+    <string name="msgs_control_wifi_wifi_on_battery">When using the battery pack</string>        
+    <string name="msgs_control_wifi_screen_unlock">WiFi on when screen is unlocked</string>
+    <string name="msgs_control_wifi_screen_unlock_always">Always turn on</string>
+    <string name="msgs_control_wifi_screen_unlock_charging">When battery is charging</string>        
+    <string name="msgs_control_wifi_wifi_on_timeout_title">WiFi connection Timeout time</string>
+    <string name="msgs_control_wifi_wifi_on_timeout_value1">1min</string>        
+    <string name="msgs_control_wifi_wifi_on_timeout_value2">5min</string>
+    <string name="msgs_control_wifi_wifi_on_timeout_value3">10min</string>
+
+    <string name="msgs_control_wifi_screen_locked">To turn off the wireless LAN, When exceeds the time the screen lock is specified.</string>
+    <string name="msgs_control_wifi_screen_locked_always">Always turn off</string>
+    <string name="msgs_control_wifi_screen_locked_battery">When using the battery pack</string>        
+    <string name="msgs_control_wifi_screen_locked_timeout_title">Timeout time</string>
+    <string name="msgs_control_wifi_screen_locked_timeout_value1">1min</string>        
+    <string name="msgs_control_wifi_screen_locked_timeout_value2">5min</string>
+    <string name="msgs_control_wifi_screen_locked_timeout_value3">10min</string>
+    
+    <string name="msgs_control_bluetooth_not_available">Bluetooth not available, You can not use Bluetooth control</string>
+    
+    <string name="msgs_control_bt_bt_on">To turn off the Bluetooth, if does not connect to the device within a specified time.</string>
+    <string name="msgs_control_bt_bt_on_always">Always turn off</string>
+    <string name="msgs_control_bt_bt_on_battery">When using the battery pack</string>        
+    <string name="msgs_control_bt_screen_unlock">Bluetooth on when screen is unlocked</string>
+    <string name="msgs_control_bt_screen_unlock_always">Alway turn on</string>
+    <string name="msgs_control_bt_screen_unlock_charging">When battery is charging</string>
+    <string name="msgs_control_bt_bt_on_timeout_title">Bluetooth connection Timeout time</string>
+    <string name="msgs_control_bt_bt_on_timeout_value1">1min</string>        
+    <string name="msgs_control_bt_bt_on_timeout_value2">5min</string>
+    <string name="msgs_control_bt_bt_on_timeout_value3">10min</string>
+
+    <string name="msgs_control_bt_screen_locked">To turn off the Bluetooth, When exceeds the time the screen lock is specified.</string>
+    <string name="msgs_control_bt_screen_locked_always">Always turn off</string>
+    <string name="msgs_control_bt_screen_locked_battery">When using the battery pack</string>        
+    <string name="msgs_control_bt_screen_locked_timeout_title">Timeout time</string>
+    <string name="msgs_control_bt_screen_locked_timeout_value1">1min</string>        
+    <string name="msgs_control_bt_screen_locked_timeout_value2">5min</string>
+    <string name="msgs_control_bt_screen_locked_timeout_value3">10min</string>
+    
+    <string name="msgs_control_screen_proximity">Proximity sensor</string>
+    <string name="msgs_control_screen_notify">Notify</string>
+    <string name="msgs_control_screen_proximity_sensor_not_available">Proximity sensor not available, You can not use screen control</string>
+    
+    <string name="msgs_control_screen_proximity_disabled_multiple_sensor_event">Temporarily disable when it receives five or more events in 10 seconds</string>
+    
+    <string name="msgs_control_screen_proximity_undetect">
+        	To turn on the screen when sensor is not sense the proximity when screen is off.</string>
+    <string name="msgs_control_screen_proximity_detect">
+        	Lock the screen when sensor is sense the proximity beyond the wait time.</string>
+    <string name="msgs_control_screen_proximity_detect_ignore_landscape">
+        	Ignore proximity sensor when device orientation is landscape</string>
+    <string name="msgs_control_screen_proximity_detect_timeout_title">Wait time</string>
+    <string name="msgs_control_screen_proximity_detect_timeout_value0">5Sec</string>
+    <string name="msgs_control_screen_proximity_detect_timeout_value1">30Sec</string>        
+    <string name="msgs_control_screen_proximity_detect_timeout_value2">1min</string>
+    <string name="msgs_control_screen_proximity_detect_timeout_value3">3min</string>
+    	
+
+    <string name="msgs_control_screen_notify_notification_def_title">System default</string>
+    <string name="msgs_control_screen_notify_notification_btn_select">Change</string>
+    	
+    <string name="msgs_control_screen_notify_when_screen_locked">Notify when screen turn off</string>
+    <string name="msgs_control_screen_notify_when_screen_locked_vibrate">Vibration</string>
+    <string name="msgs_control_screen_notify_when_screen_locked_vibrate_value1">once</string>        
+    <string name="msgs_control_screen_notify_when_screen_locked_vibrate_value2">twice</string>
+    <string name="msgs_control_screen_notify_when_screen_locked_vibrate_value3">three times</string>
+    
+    <string name="msgs_control_screen_notify_when_screen_locked_notification">To playback notification sound</string>
+    <string name="msgs_control_screen_notify_when_screen_unlocked">Notify when screen unlocked</string>
+    <string name="msgs_control_screen_notify_when_screen_unlocked_vibrate">Vibration</string>
+    <string name="msgs_control_screen_notify_when_screen_unlocked_vibrate_value1">once</string>        
+    <string name="msgs_control_screen_notify_when_screen_unlocked_vibrate_value2">twice</string>
+    <string name="msgs_control_screen_notify_when_screen_unlocked_vibrate_value3">three times</string>
+    
+    <string name="msgs_control_screen_notify_when_screen_unlocked_notification">To playback notification sound</string>
+    
+    <string name="msgs_trust_device_refresh_started">Refersh BLE device connection status has been started</string>
+    
+    <string name="msgs_trust_device_label_refresh">Refresh BLE device connection status</string>
+    <string name="msgs_trust_device_label_add">Add trusted item</string>
+    <string name="msgs_trust_device_label_edit">Edit trusted item</string>
+    <string name="msgs_trust_device_label_activate">Activate selected item</string>
+    <string name="msgs_trust_device_label_inactivate">Inactivate selected item</string>
+    <string name="msgs_trust_device_label_delete">Delete selected item</string>
+	<string name="msgs_trust_device_label_select_all">Select all item</string>
+	<string name="msgs_trust_device_label_unselect_all">Unselect all item</string>
+
+    <string name="msgs_trust_device_add_title">Please select a trusted devices</string>
+	<string name="msgs_trust_device_sdk_17_not_support">With Android 4.2 \"Trusted device\" can not be used</string>
+	<string name="msgs_trust_device_sdk_24_not_support">With Android 7.0 \"Trusted device\" can not be used</string>
+	<string name="msgs_trust_device_device_policy_manager_not_activated">To use a \"Trusted device\" is required that the device administrator was activated.(Settings -> Please enable Screen lock)</string>
+    
+	<string name="msgs_trust_device_trust_dev_registered">No trusted device registerd, tap the plus button to add one.</string>
+	
+	<string name="msgs_trust_device_send_alarm_confirm_msg">Do you want to send an alarm to %s?</string>
+	
+	<string name="msgs_trust_device_activate_confirm_msg">Are you sure you want to enable the following items?</string>
+	<string name="msgs_trust_device_inactivate_confirm_msg">Are you sure you want to disable the following items?</string>
+    			
+    <string name="msgs_trust_device_delete_confirm_msg">Are you sure you want to remove the following items?</string>
+    <string name="msgs_trust_device_add_new_wifi_ap_msg">Access points that are currently connected has been registered in the already trusted access point.</string>
+    <string name="msgs_trust_device_turn_on_wifi_msg">Wireless LAN could not get the information because it is off.</string>
+    <string name="msgs_trust_device_no_trust_item_msg">Trusted access point or Bluetooth device is not registered.</string>
+    
+    <string name="msgs_trust_device_add_new_dev_without_addr">Add device without MAC address to trusted device list.</string>
+    <string name="msgs_trust_device_add_new_dev_btn_refresh">Refresh</string>
+    <string name="msgs_trust_device_add_new_dev_some_error">Some devices do not appear for the following reason</string>
+    
+    <string name="msgs_trust_device_add_new_bt_adapter_on_msg">Bluetooth device information can not acquired because Bluetooth adapter is turned off.</string>
+    
+    <string name="msgs_trust_device_le_scan_title">Bluetooth LE device scan</string>
+    <string name="msgs_trust_device_le_scan_msg">Please wait until scan completed(%sSec)</string>
+    <string name="msgs_trust_device_le_scan_cancel">Cancel</string>
+    <string name="msgs_trust_device_le_scan_canceling">Canceling</string>
+    
+    <string name="msgs_trust_device_info_device_not_registered">Trusted device is not registered</string>
+	<string name="msgs_trust_device_info_keyguard_enabled">Trusted device is not connected</string>
+	<string name="msgs_trust_device_info_keyguard_disabled">Trusted device is connected</string>
+	<string name="msgs_trust_device_info_keyguard_disabled_after_unlock">Trusted device is connected but manual unlock required</string>
+	
+	<string name="msgs_trust_device_list_no_entries">No trusted device registered</string>
+	
+	<string name="msgs_trust_device_list_item_enabled">Enabled</string>
+	<string name="msgs_trust_device_list_item_disabled">Disabled</string>
+	<string name="msgs_trust_device_list_item_edit">Edit</string>
+    
+	<string name="msgs_trust_device_list_truet_item_title">Trusted devices</string>
+	
+	<string name="msgs_trust_device_list_edit_trust_item_title">Edit trusted item</string>	
+	<string name="msgs_trust_device_list_edit_trust_item_name">Item name</string>
+	<string name="msgs_trust_device_list_edit_trust_item_type">Type</string>
+	
+	<string name="msgs_trust_device_list_edit_trust_detect_type">Connection determination</string>
+	<string name="msgs_trust_device_list_edit_trust_detect_type_adv">Receive advertising signal</string>
+	<string name="msgs_trust_device_list_edit_trust_detect_type_conn">Connect device</string>
+	
+	<string name="msgs_trust_device_list_edit_trust_detect_conn_opt_link_loss_tag_action">Notification to the tag when the connection is lost</string>
+	<string name="msgs_trust_device_list_edit_trust_detect_conn_opt_link_loss_host_action">Notification to the terminal when the connection is lost</string>
+	<string name="msgs_trust_device_list_edit_trust_detect_conn_opt_button_notify_action">Operation of the terminal when the button tag is pressed</string>
+	<string name="msgs_trust_device_list_edit_trust_detect_conn_opt_alert_none">None</string>
+	<string name="msgs_trust_device_list_edit_trust_detect_conn_opt_alert_vibrate">To vibrate</string>
+	<string name="msgs_trust_device_list_edit_trust_detect_conn_opt_alert_alarm">Play the sound</string>
+		
+	<string name="msgs_trust_device_list_edit_trust_item_type_wifi">WiFi access point</string>
+	<string name="msgs_trust_device_list_edit_trust_item_type_bt_classic">Bluetooth classic</string>
+	<string name="msgs_trust_device_list_edit_trust_item_type_bt_le">Bluetooth low energy</string>
+	<string name="msgs_trust_device_list_edit_trust_device_name">Device name</string>
+	<string name="msgs_trust_device_list_edit_trust_device_addr">Device addr</string>
+
+	<string name="msgs_trust_device_option_expand_title">Options</string>
+	
+	<string name="msgs_trust_device_immediate_lock_when_trusted_device_disconn">To Immediately lock when all trusted device was disconnected</string>
+		
+	<string name="msgs_trust_device_list_edit_title">Edit name</string>
+	<string name="msgs_trust_device_list_default_item_name">Trusted device</string>
+	<string name="msgs_trust_device_delay_time_title">Time to a lock state when the terminal is disconnected from all the trusted devices</string>
+	<string name="msgs_trust_device_delay_time_value2">1 Min</string>
+	<string name="msgs_trust_device_delay_time_value3">5 Min</string>
+	<string name="msgs_trust_device_delay_time_value4">10 Min</string>
+	
+	<string name="msgs_trust_device_screen_lock_use_pswd_reset">Use screen lock by applicayion password</string>
+	<string name="msgs_trust_device_screen_lock_pswd_change_btn"> Password</string>
+	<string name="msgs_trust_device_screen_lock_password_dlg_title">Application password</string>
+	<string name="msgs_trust_device_screen_lock_pswd_warning_title">Application password</string>
+	<string name="msgs_trust_device_screen_lock_pswd_warning_msg">If you set the application password, screen lock that is currently set is disabled.　Screen unlock can be in the password that you specified in the screen that appears next.
+\nPlease use only if a problem occurs in the screen unlock.	    
+\nDo you want to set the application password?</string>
+	<string name="msgs_trust_device_screen_lock_pswd_delete_title">Application password</string>
+	<string name="msgs_trust_device_screen_lock_pswd_delete_msg">Application password is deleted and screen lock is disabled.</string>
+	<string name="msgs_trust_device_screen_lock_pswd_restart_msg">Application password until you restart the terminal will not be reflected in the system.</string>
+	<string name="msgs_trust_device_screen_lock_pswd_invalid_msg">I removed the password for abnormalities are found at stored screen lock password. In addition, it does not affect the current system screen lock setting.</string>
+
+	<string name="msgs_trust_device_screen_lock_pswd_less_than_min_length_msg">The password must be at least four characters. Please change the password.</string>
+	<string name="msgs_trust_device_screen_lock_pswd_less_than_min_length_title">Application password</string>
+	
+	<string name="msgs_control_inconsistencey_check_title">Trusted device and WiFi/Bluetooth options are conflict, Do you want to correct the following?</string>	
+	<string name="msgs_control_inconsistencey_check_blutooth_off_screen_locked">Due &#8220;To turn off the Bluetooth, When exceeds the time the screen lock is specified&#8221; is enabled, you might key guard is displayed when the screen lights up. You want to disable the option.</string>
+	<string name="msgs_control_inconsistencey_check_blutooth_off_connect_timeout">Set the same as the reconnection wait time by &#8220;To turn off the Bluetooth, if does not connect to the device within a specified time.&#8221;</string>
+	<string name="msgs_control_inconsistencey_check_wifi_off_screen_locked">Due &#8220;To turn off the WiFi, When exceeds the time the screen lock is specified&#8221; is enabled, you might key guard is displayed when the screen lights up. You want to disable the option.</string>
+	<string name="msgs_control_inconsistencey_check_wifi_off_connect_timeout">Set the same as the reconnection wait time by &#8220;To turn off the WiFi, if does not connect to the device within a specified time.&#8221;</string>
+		
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msgs_main_shortcust_sleep_name">Sleep</string>
+    <string name="msgs_main_shortcust_lock_name">Lock</string>
+    <string name="msgs_main_terminate_appl">Terminate Activity?</string>
+	<string name="msgs_main_termination">Activity was terminated</string>
+	<string name="msgs_main_started">Activity has started, Version=%s</string>
+	<string name="msgs_main_restarted">Activity has restarted</string>
+
+	<string name="msgs_main_screen_lock_confirm_title">Activating device administrator</string>
+	<string name="msgs_main_screen_lock_confirm_msg">
+	    Please enable "Device administrator" in order to perform a screen lock.\n
+		Please do the application in uninstall the following method.\n
+		1.Launch a AutoPhoneUnlock\n
+		2.Tap the menu button (the right edge of the top of the screen)\n
+		3.Tap the "Uninstall AutoPhoneUnlock" and follow the instructions on the screen
+	</string>
+    
+	<string name="msgs_menu_browse_logfile">Browse log</string>
+	<string name="msgs_menu_about_task_scheduler">About App</string>
+    <string name="msgs_menu_settings">Settings</string>
+    <string name="msgs_menu_backup_settings">Backup settings</string>
+    <string name="msgs_menu_restore_settings">Restore settings</string>
+    
+    <string name="msgs_menu_uninstall">Uninstall App</string>
+    <string name="msgs_menu_restart_scheduler">Restart Control service</string>
+    <string name="msgs_menu_restart_scheduler_desc">Do you want to control service?</string>
+    
+    <string name="msgs_menu_uninstall_subtitle">Confirm uninstall</string>
+    <string name="msgs_menu_uninstall_message">Do you want to continue with the uninstallation after disabling the lock screen? If you cancel the uninstallation of the application in the next screen, please enable the screen lock in the application settings.</string>
+    
+    <string name="msgs_menu_toggle_control_start">Start Control service</string>
+    <string name="msgs_menu_toggle_control_stop">Stop Control service</string>
+    <string name="msgs_menu_toggle_confirm_control_start">Do you want to start control　service?</string>
+    <string name="msgs_menu_toggle_confirm_control_stop">Do you want to stop control service</string>
+    <string name="msgs_menu_toggle_confirm_control_stop_desc">Control service is stopped, so cannot control device</string>
+
+	<string name="msgs_main_tab_control">WiFi/Bluetooth</string>
+	<string name="msgs_main_tab_screen">Screen</string>
+	<string name="msgs_main_tab_trust">Trusted Device</string>
+	
+	<string name="msgs_main_view_scheduler_disabled">Control service is stopped, so cannot control device</string>
+		
+	<string name="msgs_main_backup_success">Backup was successfully ended</string>
+	<string name="msgs_main_backup_confirm_override_file">Backup file is already exists, override backup file?</string>
+	<string name="msgs_main_restore_success">Restore was successfully ended</string>
+	<string name="msgs_main_restore_file_not_found">Backup file was not found</string>
+	<string name="msgs_main_restore_confirm_msg">Backup file has been created in the %s. Do you want to restore?</string>
+	
+	<string name="msgs_main_theme_changed_msg">Screen theme has been changed, but it does not take effect unless you restart the application. Do you want to application restart.</string>
+	
+	<string name="msgs_main_bt_le_can_not_scan_location_setting_diabled_title">Bluetooth LE Scan</string>
+	<string name="msgs_main_bt_le_can_not_scan_location_setting_diabled_msg">Bluetooth LE device is can not scan because location is disabled. Please enable location information in the Android setting.</string>
+				
+	<string name="msgs_main_log_file_browse_app_can_not_found">Application that displays the text file was not found.</string>
+	
+</resources>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_main_title">設定</string>
+    
+	<string name="settings_main_enable_scheduler_title">制御サービス</string>
+	
+	<string name="settings_main_log_title">ログオプション</string>
+	<string name="settings_main_terminate_title">終了オプション</string>
+
+    <string name="settings_main_device_admin_title">スクリーンのロック</string>
+    <string name="settings_main_device_admin_summary_ena">スクリーンロックを使用する</string>
+
+	<string name="settings_main_scheduler_sleep_wake_lock_option_title">スクリーン消灯時のWakeLock</string>
+	<string name="settings_main_scheduler_sleep_wake_lock_option_summary"></string>
+	<string-array name="settings_main_scheduler_sleep_wake_lock_option_list_entries">
+        <item>システムで判断する</item>
+	    <item>常にWakeLockを保持する</item>
+        <item>個別に設定する</item>
+    </string-array>
+		
+	<string name="settings_main_scheduler_sleep_wake_lock_proximity_sensor_title">近接センサー使用時のWakeLock</string>
+	<string name="settings_main_scheduler_sleep_wake_lock_proximity_sensor_summary_ena">近接センサー使用時はWakeLockを保持する</string>
+
+	<string name="settings_main_scheduler_rssi_criteria_title">受信するBLE装置の信号強度</string>
+	<string name="settings_main_scheduler_rssi_criteria_summary"></string>
+	<string name="settings_main_scheduler_rssi_criteria">settings_main_scheduler_rssi_criteria</string>
+	<string-array name="settings_main_scheduler_rssi_criteria_list_entries">
+        <item>指定なし</item>
+	    <item>-60dBm以上を受信</item>
+        <item>-80dBm以上を受信</item>
+        <item>-90dBm以上を受信</item>
+    </string-array>
+		
+    <string name="settings_main_use_light_theme_title">画面テーマ</string>
+    <string name="settings_main_use_light_theme_summary_ena">ライトテーマを使用する</string>
+    
+    <string name="settings_main_force_use_trust_device_title">信頼できる装置</string>
+    <string name="settings_main_force_use_trust_device_summary_ena">Android4.2で信頼できる装置を使用する</string>
+	<string name="settings_main_force_use_trust_device_confirm_title">Android 4.2では信頼できる装置を使用すると不具合が発生することがあります。</string>
+	<string name="settings_main_force_use_trust_device_confirm_msg">-Google Android4.2(JDQ39)では不具合が発生します
+\n-Sony Xperia A(SO-04E)では不具合が発生します
+\n-CyanogenMod 10.1は正常に機能します</string>
+
+	<string name="settings_main_log_option_title">ログ出力</string>
+    <string name="settings_main_log_option_summary_ena">ログを書き出す</string>
+    
+    <string name="settings_main_log_level_title">デバッグ情報</string>
+	<string name="settings_main_log_level_summary">現設定=0</string>
+	<string name="settings_main_log_level_dialog_title">レベルの選択</string>
+	<string-array name="settings_main_log_level_list_entries">
+        <item>0:デバッグなし</item>
+        <item>1:最小限の情報</item>
+        <item>2:詳細情報</item>
+        <item>3:詳細情報+Scan</item>
+    </string-array>
+    
+    <string name="settings_main_log_file_max_count_title">保持するログファイルの最大数</string>
+	<string name="settings_main_log_file_max_count_summary">保持するログファイルの最大数=</string>
+	<string name="settings_main_log_file_max_count_dialog_title">ログファイルの最大数</string>
+		
+    <string name="settings_main_log_dir">settings_main_log_dir</string>
+	<string name="settings_main_log_dir_title">ログファイルのディレクトリ</string>        
+    <string name="settings_main_log_dir_summary">現在</string>        
+        
+    <string name="settings_main_default_current_setting">現設定=</string>
+    
+    <string name="settings_main_misc_title">その他</string>
+    
+    <string name="settings_main_exit_clean_title">終了時の処理</string>
+    <string name="settings_main_exit_clean_summary_ena">アプリケーション終了時にプロセスをキルする</string>
+
+</resources>

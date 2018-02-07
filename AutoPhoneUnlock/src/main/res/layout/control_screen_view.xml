@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="HardcodedText,RtlHardcoded,UselessParent" >
+
+    <TextView
+        android:id="@+id/control_screen_view_proximity_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msgs_control_screen_proximity"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+     
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <CheckedTextView
+            android:id="@+id/control_screen_view_proximity_diable_when_multiple_sensor_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center_vertical"
+            android:text="@string/msgs_control_screen_proximity_disabled_multiple_sensor_event"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+		<include layout="@layout/divider_line3" />
+		
+        <CheckedTextView
+            android:id="@+id/control_screen_view_proximity_undetect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center_vertical"
+            android:text="@string/msgs_control_screen_proximity_undetect"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        
+		<include layout="@layout/divider_line3" />
+		
+        <CheckedTextView
+            android:id="@+id/control_screen_view_proximity_detect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+            android:gravity="center_vertical"
+            android:text="@string/msgs_control_screen_proximity_detect"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <LinearLayout
+            android:id="@+id/control_screen_view_proximity_detect_option_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@+id/control_screen_view_proximity_detect_ignore_landscape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+	            android:gravity="center_vertical"
+                android:text="@string/msgs_control_screen_proximity_detect_ignore_landscape" />
+
+            <TextView
+                android:id="@+id/control_screen_view_proximity_detect_timeout_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/msgs_control_screen_proximity_detect_timeout_title"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RadioGroup
+                android:id="@+id/control_screen_view_proximity_detect_timeout_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_proximity_detect_timeout_rg_value0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/msgs_control_screen_proximity_detect_timeout_value0"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_proximity_detect_timeout_rg_value1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/msgs_control_screen_proximity_detect_timeout_value1"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_proximity_detect_timeout_rg_value2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/msgs_control_screen_proximity_detect_timeout_value2"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_proximity_detect_timeout_rg_value3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/msgs_control_screen_proximity_detect_timeout_value3"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RadioGroup>
+            
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <include layout="@layout/divider_line3" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msgs_control_screen_notify"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msgs_control_screen_notify_when_screen_locked"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+            <CheckedTextView
+                android:id="@+id/control_screen_view_notify_when_screen_locked_vibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+	            android:gravity="center_vertical"
+                android:text="@string/msgs_control_screen_notify_when_screen_locked_vibrate" />
+            
+            <RadioGroup
+                android:id="@+id/control_screen_view_notify_when_screen_locked_vibrate_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_notify_when_screen_locked_vibrate_rg_value1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/msgs_control_screen_notify_when_screen_locked_vibrate_value1"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_notify_when_screen_locked_vibrate_rg_value2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/msgs_control_screen_notify_when_screen_locked_vibrate_value2"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_notify_when_screen_locked_vibrate_rg_value3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/msgs_control_screen_notify_when_screen_locked_vibrate_value3"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+            </RadioGroup>
+
+            <include layout="@layout/divider_line3" />
+            
+            <CheckedTextView
+                android:id="@+id/control_screen_view_notify_when_screen_locked_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+	            android:gravity="center_vertical"
+                android:text="@string/msgs_control_screen_notify_when_screen_locked_notification" />
+
+            <LinearLayout
+                android:id="@+id/control_screen_view_notify_when_screen_locked_notification_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <CheckedTextView
+                    android:id="@+id/control_screen_view_notify_when_screen_locked_notification_view_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Medium Text"/>
+
+                <Button
+                    android:id="@+id/control_screen_view_notify_when_screen_locked_notification_view_btn_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msgs_control_screen_notify_notification_btn_select" />
+            </LinearLayout>
+            
+        </LinearLayout>
+        <include layout="@layout/divider_line3" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/msgs_control_screen_notify_when_screen_unlocked"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+            <CheckedTextView
+                android:id="@+id/control_screen_view_notify_when_screen_unlocked_vibrate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+	            android:gravity="center_vertical"
+                android:text="@string/msgs_control_screen_notify_when_screen_unlocked_vibrate" />
+            
+            <RadioGroup
+                android:id="@+id/control_screen_view_notify_when_screen_unlocked_vibrate_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_notify_when_screen_unlocked_vibrate_rg_value1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:checked="true"
+                    android:text="@string/msgs_control_screen_notify_when_screen_unlocked_vibrate_value1"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_notify_when_screen_unlocked_vibrate_rg_value2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/msgs_control_screen_notify_when_screen_unlocked_vibrate_value2"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                <RadioButton
+                    android:id="@+id/control_screen_view_notify_when_screen_unlocked_vibrate_rg_value3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text="@string/msgs_control_screen_notify_when_screen_unlocked_vibrate_value3"
+                    android:textAppearance="?android:attr/textAppearanceSmall" />
+            </RadioGroup>
+
+            <include layout="@layout/divider_line3" />
+            
+            <CheckedTextView
+                android:id="@+id/control_screen_view_notify_when_screen_unlocked_notification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+	            android:gravity="center_vertical"
+                android:text="@string/msgs_control_screen_notify_when_screen_unlocked_notification" />
+
+            <LinearLayout
+                android:id="@+id/control_screen_view_notify_when_screen_unlocked_notification_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <CheckedTextView
+                    android:id="@+id/control_screen_view_notify_when_screen_unlocked_notification_view_title"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="20dp"
+                    android:text="Medium Text" />
+
+                <Button
+                    android:id="@+id/control_screen_view_notify_when_screen_unlocked_notification_view_btn_select"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msgs_control_screen_notify_notification_btn_select" />
+            </LinearLayout>
+            <include layout="@layout/divider_line3" />
+        </LinearLayout>
+	</LinearLayout>    
+    
+</LinearLayout>

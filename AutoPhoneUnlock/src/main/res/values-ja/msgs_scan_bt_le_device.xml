@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msgs_scan_bt_le_device_dlg_menu_title">BLE装置の検索</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_btn_start_scan">開始</string>
+    <string name="msgs_scan_bt_le_device_dlg_btn_cancel_scan">停止</string>
+    <string name="msgs_scan_bt_le_device_dlg_btn_save_result">保存</string>
+    <string name="msgs_scan_bt_le_device_dlg_btn_clear_result">消去</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_save_ended">検索結果を保存しました。ファイル=%s</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_title">BLE装置の検索</string>
+    <string name="msgs_scan_bt_le_device_dlg_rssi_level">RSSI</string>
+    <string name="msgs_scan_bt_le_device_dlg_rssi_min">最小</string>
+    <string name="msgs_scan_bt_le_device_dlg_rssi_max">最高</string>
+    <string name="msgs_scan_bt_le_device_dlg_rssi_last">最後</string>
+    <string name="msgs_scan_bt_le_device_dlg_last_time">最終更新時間</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_no_devices">装置が検出されていません</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_progress_msg">検索終了まで%s秒</string>
+	<string name="msgs_scan_bt_le_device_dlg_notify_to_user">新しい装置が発見された時に振動させる</string>
+	<string name="msgs_scan_bt_le_device_dlg_no_scan_period">停止ボタンが押されるまで検索を行う</string>
+	<string name="msgs_scan_bt_le_device_dlg_progress_no_scan_period">検索を中止するには中止ボタンを押してください</string>
+</resources>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/msgs_control_wifi"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@+id/control_wifi_view_screen_locked"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+	            android:gravity="center_vertical"
+                android:text="@string/msgs_control_wifi_screen_locked"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/control_wifi_view_screen_locked_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/control_wifi_view_screen_locked_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_screen_locked_rg_always"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="@string/msgs_control_wifi_screen_locked_always" />
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_screen_locked_rg_battery"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/msgs_control_wifi_screen_locked_battery" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/control_wif_view_screen_locked_timeout_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/msgs_control_wifi_screen_locked_timeout_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/control_wifi_view_screen_locked_timeout_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_screen_locked_timeout_rg_value1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="@string/msgs_control_wifi_screen_locked_timeout_value1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_screen_locked_timeout_rg_value2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/msgs_control_wifi_screen_locked_timeout_value2"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_screen_locked_timeout_rg_value3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/msgs_control_wifi_screen_locked_timeout_value3"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RadioGroup>
+            </LinearLayout>
+            <include layout="@layout/divider_line3" />
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@+id/control_wifi_view_wifi_on"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+	            android:gravity="center_vertical"
+                android:text="@string/msgs_control_wifi_wifi_on"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <LinearLayout
+                android:id="@+id/control_wifi_view_wifi_on_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RadioGroup
+                    android:id="@+id/control_wifi_view_wifi_on_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_wifi_on_rg_always"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="@string/msgs_control_wifi_wifi_on_always" />
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_wifi_on_rg_battery"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:text="@string/msgs_control_wifi_wifi_on_battery" />
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/control_wif_view_wifi_on_timeout_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/msgs_control_wifi_wifi_on_timeout_title"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/control_wifi_view_wifi_on_timeout_rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="horizontal" >
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_wifi_on_timeout_rg_value1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:checked="true"
+                        android:text="@string/msgs_control_wifi_wifi_on_timeout_value1"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_wifi_on_timeout_rg_value2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/msgs_control_wifi_wifi_on_timeout_value2"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+                    <RadioButton
+                        android:id="@+id/control_wifi_view_wifi_on_timeout_rg_value3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_gravity="center_vertical"
+                        android:text="@string/msgs_control_wifi_wifi_on_timeout_value3"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />
+                </RadioGroup>
+            </LinearLayout>
+            <include layout="@layout/divider_line3" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <CheckedTextView
+                android:id="@+id/control_wifi_view_wifi_screen_unlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+	            android:checkMark="?android:attr/listChoiceIndicatorMultiple"
+	            android:gravity="center_vertical"
+                android:text="@string/msgs_control_wifi_screen_unlock"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <RadioGroup
+                android:id="@+id/control_wifi_view_wifi_screen_unlock_rg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="horizontal" >
+
+                <RadioButton
+                    android:id="@+id/control_wifi_view_wifi_screen_unlock_rg_always"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:checked="true"
+                    android:text="@string/msgs_control_wifi_screen_unlock_always" />
+
+                <RadioButton
+                    android:id="@+id/control_wifi_view_wifi_screen_unlock_rg_charging"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:text="@string/msgs_control_wifi_screen_unlock_charging" />
+            </RadioGroup>
+        </LinearLayout>
+        <include layout="@layout/divider_line3" />
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   	<string name="msgs_widget_battery_status_charge_charging">Charging</string>
+   	<string name="msgs_widget_battery_status_charge_discharging">Discharging</string>
+   	<string name="msgs_widget_battery_status_charge_full">Full</string>
+   	<string name="msgs_widget_battery_status_charge_unknown">Unknown</string>
+   	<string name="msgs_widget_battery_status_health_dead">Dead</string>
+   	<string name="msgs_widget_battery_status_health_good">Good</string>
+   	<string name="msgs_widget_battery_status_health_overvolt">Over voltage</string>
+   	<string name="msgs_widget_battery_status_health_overheat">Over heat</string>
+   	<string name="msgs_widget_battery_status_health_failure">Failure</string>
+   	<string name="msgs_widget_battery_status_health_unknown">Unknown</string>
+   	<string name="msgs_widget_battery_status_tempture">°C</string>
+   	
+   	<string name="msgs_widget_battery_button_not_functional">To lock the screen failed. make sure  "screen lock" is enabled.</string>
+    
+</resources>

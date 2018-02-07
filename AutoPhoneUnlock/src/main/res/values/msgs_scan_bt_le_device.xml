@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msgs_scan_bt_le_device_dlg_menu_title">Scan BLE device</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_btn_start_scan">Begin</string>
+    <string name="msgs_scan_bt_le_device_dlg_btn_cancel_scan">Stop</string>
+    <string name="msgs_scan_bt_le_device_dlg_btn_save_result">Save</string>
+    <string name="msgs_scan_bt_le_device_dlg_btn_clear_result">Clear</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_save_ended">Scan result was saved. File=%s</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_title">Scan BLE device</string>
+    <string name="msgs_scan_bt_le_device_dlg_rssi_level">RSSI</string>
+    <string name="msgs_scan_bt_le_device_dlg_rssi_min">Min</string>
+    <string name="msgs_scan_bt_le_device_dlg_rssi_max">Max</string>
+    <string name="msgs_scan_bt_le_device_dlg_rssi_last">Last</string>
+    <string name="msgs_scan_bt_le_device_dlg_last_time">Last time</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_no_devices">No detected device</string>
+    
+    <string name="msgs_scan_bt_le_device_dlg_progress_msg">Scan to completion is %s second.</string>
+    <string name="msgs_scan_bt_le_device_dlg_notify_to_user">To vibrate when new device was found</string>
+    <string name="msgs_scan_bt_le_device_dlg_no_scan_period">To scan until a stop button is pressed</string>
+    <string name="msgs_scan_bt_le_device_dlg_progress_no_scan_period">Press the stop button to stop a scan.</string>
+</resources>

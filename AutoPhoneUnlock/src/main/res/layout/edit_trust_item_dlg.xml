@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/edit_trust_item_dlg_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription,HardcodedText" >
+
+    <LinearLayout
+        android:id="@+id/edit_trust_item_dlg_title_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/edit_trust_item_dlg_title"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/msgs_trust_device_list_edit_trust_item_title"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
+
+        <include layout="@layout/divider_line1_turquoise" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/edit_trust_item_dlg_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:scrollbars="vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+         >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msgs_trust_device_list_edit_trust_item_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : "
+                    tools:ignore="HardcodedText" />
+
+                <EditText
+                    android:id="@+id/edit_trust_item_dlg_trust_item_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msgs_trust_device_list_edit_trust_item_type"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : " />
+
+                <TextView
+                    android:id="@+id/edit_trust_item_dlg_trust_item_type"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msgs_trust_device_list_edit_trust_device_name"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : " />
+
+                <TextView
+                    android:id="@+id/edit_trust_item_dlg_trust_device_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/msgs_trust_device_list_edit_trust_device_addr"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" : " />
+
+                <TextView
+                    android:id="@+id/edit_trust_item_dlg_trust_device_addr"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_trust_item_dlg_trust_detect_type_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left|start"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/msgs_trust_device_list_edit_trust_detect_type"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <RadioGroup
+                    android:id="@+id/edit_trust_item_dlg_trust_rg_detect_type"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|left|start"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" >
+
+                    <RadioButton
+                        android:id="@+id/edit_trust_item_dlg_trust_detect_type_advertising"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:text="@string/msgs_trust_device_list_edit_trust_detect_type_adv"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioButton
+                        android:id="@+id/edit_trust_item_dlg_trust_detect_type_connect"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/msgs_trust_device_list_edit_trust_detect_type_conn"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/edit_trust_item_dlg_trust_device_connect_option_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/edit_trust_item_dlg_trust_detect_notify_tag_virew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left|start"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_link_loss_tag_action"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/edit_trust_item_dlg_trust_detect_notify_tag"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left|start"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/edit_trust_item_dlg_trust_detect_notify_tag_none"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_alert_none"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/edit_trust_item_dlg_trust_detect_notify_tag_vibration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_alert_vibrate"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/edit_trust_item_dlg_trust_detect_notify_tag_alarm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_alert_alarm"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/edit_trust_item_dlg_trust_detect_notify_host_virew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left|start"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_link_loss_host_action"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/edit_trust_item_dlg_trust_detect_notify_host"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left|start"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/edit_trust_item_dlg_trust_detect_notify_host_none"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_alert_none"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/edit_trust_item_dlg_trust_detect_notify_host_vibration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_alert_vibrate"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/edit_trust_item_dlg_trust_detect_notify_host_alarm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_alert_alarm"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+                    </RadioGroup>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/edit_trust_item_dlg_trust_detect_notify_button_virew"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left|start"
+                        android:layout_marginTop="5dp"
+                        android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_button_notify_action"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <RadioGroup
+                        android:id="@+id/edit_trust_item_dlg_trust_detect_notify_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top|left|start"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical" >
+
+                        <RadioButton
+                            android:id="@+id/edit_trust_item_dlg_trust_detect_notify_button_none"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="true"
+                            android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_alert_none"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/edit_trust_item_dlg_trust_detect_notify_button_vibration"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_alert_vibrate"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                        <RadioButton
+                            android:id="@+id/edit_trust_item_dlg_trust_detect_notify_button_alarm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/msgs_trust_device_list_edit_trust_detect_conn_opt_alert_alarm"
+                            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    </RadioGroup>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/edit_trust_item_dlg_ok_cancel" />
+
+</LinearLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_main_title">Settings</string>
+    
+    <string name="settings_main_enable_scheduler_title">Control service</string>
+
+    <string name="settings_main_device_admin_title">Screen lock</string>
+    <string name="settings_main_device_admin_summary_ena">Enable Screen Lock</string>
+	<string name="settings_main_device_admin">settings_main_device_admin</string>
+	
+	<string name="settings_main_scheduler_sleep_wake_lock_option_title">Holding WakeLock during screen off</string>
+	<string name="settings_main_scheduler_sleep_wake_lock_option_summary"></string>
+	<string name="settings_main_scheduler_sleep_wake_lock_option">settings_main_scheduler_sleep_wake_lock_option</string>
+	<string-array name="settings_main_scheduler_sleep_wake_lock_option_list_entries">
+        <item>Determine by the system</item>
+	    <item>Always hold Wake Lock</item>
+        <item>Setting individually</item>
+    </string-array>
+	<string-array name="settings_main_scheduler_sleep_wake_lock_option_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+		
+	<string name="settings_main_scheduler_sleep_wake_lock_proximity_sensor_title">WakeLock for proximity sensor</string>
+	<string name="settings_main_scheduler_sleep_wake_lock_proximity_sensor_summary_ena">Holding the Wakelock while using the proximity sensor</string>
+	<string name="settings_main_scheduler_sleep_wake_lock_proximity_sensor">settings_main_scheduler_sleep_wake_lock_proximity_sensor</string>
+
+	<string name="settings_main_scheduler_rssi_criteria_title">Signal strength of the received to BLE devices</string>
+	<string name="settings_main_scheduler_rssi_criteria_summary"></string>
+	<string name="settings_main_scheduler_rssi_criteria">settings_main_scheduler_rssi_criteria</string>
+	<string-array name="settings_main_scheduler_rssi_criteria_list_entries">
+        <item>Not specified</item>
+	    <item>Receive over -60dBm</item>
+        <item>Receive over -80dBm</item>
+        <item>Receive over -90dBm</item>
+    </string-array>
+	<string-array name="settings_main_scheduler_rssi_criteria_list_values">
+        <item>0</item>
+        <item>-60</item>
+        <item>-80</item>
+        <item>-90</item>
+    </string-array>
+		
+    <string name="settings_main_use_light_theme_title">Screen theme</string>
+    <string name="settings_main_use_light_theme_summary_ena">Use light theme</string>
+	<string name="settings_main_use_light_theme">settings_main_use_light_theme</string>
+
+    <string name="settings_main_force_use_trust_device_title">Trusted device</string>
+    <string name="settings_main_force_use_trust_device_summary_ena">To use trusted device in Android4.2</string>
+	<string name="settings_main_force_use_trust_device">settings_main_force_use_trust_device</string>
+	<string name="settings_main_force_use_trust_device_confirm_title">A problem may occur when you use the Android 4.2 in trusted device. </string>
+	<string name="settings_main_force_use_trust_device_confirm_msg">-Google Android4.2(JDQ39) failure occurs\n
+-Sony Xperia ZR(Android4.2.2) failure occurs\n
+-CyanogenMod 10.1 will work correctly</string>
+			
+    <string name="settings_main_ignore_sdk17_bug_title">Android 4.2 option</string>
+    <string name="settings_main_ignore_sdk17_bug_summary_ena">Use trusted device</string>
+	<string name="settings_main_ignore_sdk17_bug">settings_main_ignore_sdk17_bug</string>
+
+    <string name="settings_main_log_title">Log option</string>
+    <string name="settings_main_terminate_title">Termination option</string>
+
+	<string name="settings_main_log_option_title">Log file</string>
+    <string name="settings_main_log_option_summary_ena">Write log file.</string>
+	<string name="settings_main_log_option">settings_main_log_option</string>
+    
+    <string name="settings_main_log_level_title">Debug message level</string>
+	<string name="settings_main_log_level_summary">Current debug message level=0</string>
+	<string name="settings_main_log_level_dialog_title">Select debug message level</string>
+	<string name="settings_main_log_level">settings_main_log_level</string>
+	<string-array name="settings_main_log_level_list_entries">
+        <item>0:No Debug message</item>
+        <item>1:Debug message</item>
+        <item>2:Detail debug message</item>
+        <item>3:Detail + Scan info</item>
+    </string-array>
+    <string-array name="settings_main_log_level_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string name="settings_main_log_file_max_count_title">Max log file count</string>
+	<string name="settings_main_log_file_max_count_summary">Max log file count=</string>
+	<string name="settings_main_log_file_max_count_dialog_title">Select file count</string>
+	<string name="settings_main_log_file_max_count">settings_main_log_file_max_count</string>
+	<string-array name="settings_main_log_file_max_count_list_entries">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    <string-array name="settings_main_log_file_max_count_list_values">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>30</item>
+        <item>50</item>
+    </string-array>
+    
+    <string name="settings_main_log_dir">settings_main_log_dir</string>
+	<string name="settings_main_log_dir_title">Log file directory</string>        
+    <string name="settings_main_log_dir_summary">Current=</string>        
+
+    <string name="settings_main_default_current_setting">Current=</string>
+    
+    <string name="settings_main_misc_title">Miscellaneous</string>
+    
+    <string name="settings_main_exit_clean_title">Exit cleanly</string>
+    <string name="settings_main_exit_clean_summary_ena">Kill application process after application cleanup.</string>
+	<string name="settings_main_exit_clean">settings_main_exit_clean</string>
+
+</resources>

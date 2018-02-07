@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sentaroh.android.AutoPhoneUnlock">
+    
+    <uses-sdk android:targetSdkVersion="11" android:minSdkVersion="10" />
+    
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+	<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+	<uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/> 
+	<uses-permission android:name="android.permission.BLUETOOTH"/>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.USES_POLICY_FORCE_LOCK"/>
+	<uses-permission android:name="android.permission.WAKE_LOCK" />
+	<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    
+    <uses-permission android:name="android.permission.NFC"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+
+    <application 
+        android:icon="@drawable/main_icon_128"
+        android:label="@string/app_name" android:theme="@style/Main" 
+        android:allowBackup="true"
+        android:name="GlobalParameters" android:largeHeap="true">
+        <receiver 
+    	    android:name=".SchedulerReceiver"
+    	    android:process=":Svc" 
+    	    android:exported="true">
+			<intent-filter>
+				<action android:name="android.intent.action.BOOT_COMPLETED" />
+				<action android:name="android.intent.action.ACTION_SHUTDOWN" />
+				<action android:name="android.intent.action.LOCALE_CHANGED" />
+				<action android:name="android.intent.action.MEDIA_MOUNTED" />
+				<action android:name="android.media.VOLUME_CHANGED_ACTION"/>
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_DISABLE_KEYGUARD" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_ENABLE_KEYGUARD" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_TIMER_EXPIRED" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_START_SCHEDULER" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_RESTART_SCHEDULER" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_RESET_SCHEDULER" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_RELOAD_TRUST_DEVICE_LIST" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_START_ACTIVITY_MAIN"/>
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_RELOAD_DEVICE_ADMIN" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_TOGGLE_SILENT" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_LOCK_SCREEN" />
+			</intent-filter>
+		</receiver>
+        <receiver 
+            android:name=".DevAdmReceiver"
+            android:process=":Svc"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data 
+                android:name="android.app.device_admin"
+                android:resource="@xml/policy_device_admin" />
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+       	</receiver>
+		<service 
+		    android:name=".SchedulerService" 
+		    android:process=":Svc" android:exported="false">
+			<intent-filter>
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_SERVICE_HEARTBEAT" />
+			</intent-filter>
+						
+		</service>
+        <activity
+            android:name=".ActivityMain"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale"
+            android:alwaysRetainTaskState="true" 
+            android:windowSoftInputMode="adjustPan" android:icon="@drawable/main_icon_128">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name=".ActivityMessageDlg"
+            android:label="@string/app_name" 
+            android:launchMode="singleTask"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|layoutDirection|fontScale"
+            android:alwaysRetainTaskState="true" 
+            android:windowSoftInputMode="adjustPan">
+        </activity>
+        
+        <activity 
+	        android:name=".ActivitySettings"
+            android:label="Settings"
+            android:screenOrientation="unspecified"
+            android:launchMode="standard" >
+        </activity>
+        <activity 
+	        android:name=".ActivityShortcutSleep"
+            android:label="@string/msgs_main_shortcust_sleep_name"
+            android:screenOrientation="unspecified"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent"
+            android:taskAffinity=".ShortcutSleep"
+            android:configChanges="orientation|keyboardHidden" android:excludeFromRecents="true">
+   			<intent-filter >
+				<action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity 
+	        android:name=".MakeShortcutSleep"
+            android:label="@string/msgs_main_shortcust_sleep_name"
+            android:exported="true"
+            android:icon="@drawable/sleep_icon_128" android:excludeFromRecents="true">
+   			<intent-filter>
+		        <action android:name="android.intent.action.CREATE_SHORTCUT" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		    </intent-filter>
+        </activity>
+
+        <activity 
+	        android:name=".ActivityShortcutLock"
+            android:label="@string/msgs_main_shortcust_lock_name"
+            android:screenOrientation="unspecified"
+            android:launchMode="singleTop"
+            android:exported="true"
+            android:theme="@android:style/Theme.Translucent"
+            android:taskAffinity=".ShortcutSleep"
+            android:configChanges="orientation|keyboardHidden" android:excludeFromRecents="true">
+   			<intent-filter >
+				<action android:name="android.intent.action.VIEW" />
+            </intent-filter>
+        </activity>
+        <activity 
+	        android:name=".MakeShortcutLock"
+            android:label="@string/msgs_main_shortcust_lock_name"
+            android:exported="true"
+            android:icon="@drawable/lock_icon_128" android:excludeFromRecents="true">
+   			<intent-filter>
+		        <action android:name="android.intent.action.CREATE_SHORTCUT" />
+		        <category android:name="android.intent.category.DEFAULT" />
+		    </intent-filter>
+        </activity>
+        
+        <receiver 
+    	    android:name="com.sentaroh.android.AutoPhoneUnlock.Log.LogReceiver"
+    	    android:process=":Svc" 
+    	    android:exported="false">
+			<intent-filter>
+			    <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_LOG_SEND" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_LOG_RESET" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_LOG_DELETE" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_LOG_ROTATE" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_LOG_FLUSH" />
+				<action android:name="com.sentaroh.android.AutoPhoneUnlock.ACTION_LOG_CLOSE" />
+			</intent-filter>
+		</receiver>
+				
+    </application>
+    
+</manifest>

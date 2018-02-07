@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE string>
+<resources>
+    <string name="msgs_about_dlg_func_btn">Function</string>
+    <string name="msgs_about_dlg_change_btn">Change history</string>
+    <string name="msgs_about_dlg_func_html">APU_Desc_EN.htm</string>
+    <string name="msgs_about_dlg_change_html">APU_Change_EN.htm</string>
+    <string name="msgs_about_dlg_title">AutoPhoneUnlock</string>
+
+</resources>

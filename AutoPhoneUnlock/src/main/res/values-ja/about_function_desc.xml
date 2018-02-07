@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE string>
+<resources>
+    <string name="msgs_about_dlg_func_btn">機能</string>
+    <string name="msgs_about_dlg_change_btn">変更履歴</string>
+    <string name="msgs_about_dlg_func_html">APU_Desc_JA.htm</string>
+    <string name="msgs_about_dlg_change_html">APU_Change_JA.htm</string>
+
+</resources>

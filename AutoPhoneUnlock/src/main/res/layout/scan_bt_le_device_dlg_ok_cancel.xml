@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/scan_bt_le_device_dlg_btn_scan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1"
+        android:text="@string/msgs_scan_bt_le_device_dlg_btn_start_scan" 
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Button
+        android:id="@+id/scan_bt_le_device_dlg_btn_cancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:text="@string/msgs_scan_bt_le_device_dlg_btn_cancel_scan" 
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Button
+        android:id="@+id/scan_bt_le_device_dlg_btn_save_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:text="@string/msgs_scan_bt_le_device_dlg_btn_save_result" 
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+    <Button
+        android:id="@+id/scan_bt_le_device_dlg_btn_clear_result"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:text="@string/msgs_scan_bt_le_device_dlg_btn_clear_result"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    
+    <Button
+        android:id="@+id/scan_bt_le_device_dlg_btn_close"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:text="@string/msgs_common_dialog_close" 
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+
+</LinearLayout>

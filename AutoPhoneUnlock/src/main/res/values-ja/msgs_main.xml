@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="msgs_main_shortcust_sleep_name">スリープ</string>
+    <string name="msgs_main_shortcust_lock_name">ロック</string>
+    <string name="msgs_main_terminate_appl">AutoPhoneUnlockアクティビティを終了しますか?</string>
+	<string name="msgs_main_termination">AutoPhoneUnlockアクティビティが終了しました</string>
+	<string name="msgs_main_started">AutoPhoneUnlockアクティビティを開始しました, バージョン=%s</string>
+	<string name="msgs_main_restarted">AutoPhoneUnlockが再起動しました</string>
+
+	<string name="msgs_main_screen_lock_confirm_title">デバイス管理者の有効化</string>
+	<string name="msgs_main_screen_lock_confirm_msg">
+		スクリーンのロックを行うために「デバイス管理者」を有効にしてください。\n
+		アプリケーションをアンインストールするには下記方法で行ってください。\n
+		1.AutoPhoneUnlockを立ち上げる\n
+		2.メニューボタンを押す（画面上部の右端）\n
+		3.”AutoPhoneUnlockのアンインストール”を選択し画面の指示に従う
+	</string>
+    
+	<string name="msgs_menu_browse_logfile">ログの表示</string>
+	<string name="msgs_menu_about_task_scheduler">アプリについて</string>
+    <string name="msgs_menu_settings">設定</string>
+    <string name="msgs_menu_backup_settings">設定のバックアップ</string>
+    <string name="msgs_menu_restore_settings">設定のリストア</string>
+    <string name="msgs_menu_uninstall">アプリのアンインストール</string>
+    <string name="msgs_menu_restart_scheduler">制御サービスの再起動</string>
+    <string name="msgs_menu_restart_scheduler_desc">制御サービスを再起動しますか？</string>
+
+    <string name="msgs_menu_toggle_control_start">制御サービス開始</string>
+    <string name="msgs_menu_toggle_control_stop">制御サービス停止</string>
+    <string name="msgs_menu_toggle_confirm_control_start">制御を開始しますか？</string>
+    <string name="msgs_menu_toggle_confirm_control_stop">制御を停止しますか？</string>
+    <string name="msgs_menu_toggle_confirm_control_stop_desc">制御サービスを停止すると端末の制御ができなくなります。</string>
+    
+    <string name="msgs_menu_uninstall_subtitle">アンインストールの確認</string>
+    <string name="msgs_menu_uninstall_message">スクリーンロックを無効にし、アンインストールを続行しますか？次に表示される画面でアプリケーションのアンインストールを中止した場合はアプリケーション設定でスクリーンロックを有効にしてください。</string>
+    
+	<string name="msgs_main_tab_control">WiFi/Bluetooth</string>
+	<string name="msgs_main_tab_screen">画面</string>
+	<string name="msgs_main_tab_trust">信頼できる装置</string>
+	
+	<string name="msgs_main_view_scheduler_disabled">制御サービスが停止されており端末の制御ができません</string>
+	
+	<string name="msgs_main_backup_success">バックアップが正常に終了しました</string>
+	<string name="msgs_main_backup_confirm_override_file">バックアップファイルが存在します。上書きしてよろしいですか？</string>
+	<string name="msgs_main_restore_success">リストアが正常に終了しました</string>
+	<string name="msgs_main_restore_file_not_found">バックアップファイルが存在しません</string>
+	<string name="msgs_main_restore_confirm_msg">バックアップファイルは%sに作成されました。リストアしますか？</string>
+	
+	<string name="msgs_main_theme_changed_msg">スクリーンテーマが変更されましたが、アプリケーションを再起動しなければ反映されません。アプリケーションを再起動しますか？</string>
+	
+	<string name="msgs_main_bt_le_can_not_scan_location_setting_diabled_title">Bluetooth LE装置の検索</string>
+	<string name="msgs_main_bt_le_can_not_scan_location_setting_diabled_msg">位置情報が無効なためBluetooth LE装置の検索ができません。Androidの設定で位置情報を有効にしてください。</string>
+	
+	<string name="msgs_main_log_file_browse_app_can_not_found">テキストファイルを表示するアプリケーションが見つかりませんでした。</string>	
+</resources>

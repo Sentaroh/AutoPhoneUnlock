@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
+    <header android:title="@string/settings_main_enable_scheduler_title"
+        android:fragment="com.sentaroh.android.AutoPhoneUnlock.ActivitySettings$SettingsSceduler"/>
+	<header android:title="@string/settings_main_log_title"
+	    android:fragment="com.sentaroh.android.AutoPhoneUnlock.ActivitySettings$SettingsLog"/>
+	<header android:title="@string/settings_main_misc_title"
+	    android:fragment="com.sentaroh.android.AutoPhoneUnlock.ActivitySettings$SettingsMisc"/>
+</preference-headers>

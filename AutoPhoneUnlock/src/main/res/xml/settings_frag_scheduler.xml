@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+   	    <CheckBoxPreference
+			android:key="settings_main_device_admin"
+			android:title="@string/settings_main_device_admin_title"
+			android:summary="@string/settings_main_device_admin_summary_ena" />
+   	    <ListPreference
+			android:key="settings_main_scheduler_sleep_wake_lock_option"
+			android:title="@string/settings_main_scheduler_sleep_wake_lock_option_title"
+			android:summary="@string/settings_main_scheduler_sleep_wake_lock_option_summary"
+			android:dialogTitle="@string/settings_main_scheduler_sleep_wake_lock_option_title"
+			android:entries="@array/settings_main_scheduler_sleep_wake_lock_option_list_entries"
+			android:entryValues="@array/settings_main_scheduler_sleep_wake_lock_option_list_values"/>
+   	    <CheckBoxPreference
+			android:key="settings_main_scheduler_sleep_wake_lock_proximity_sensor"
+			android:title="@string/settings_main_scheduler_sleep_wake_lock_proximity_sensor_title"
+			android:summary="@string/settings_main_scheduler_sleep_wake_lock_proximity_sensor_summary_ena"/>
+   	    <ListPreference
+			android:key="settings_main_scheduler_rssi_criteria"
+			android:title="@string/settings_main_scheduler_rssi_criteria_title"
+			android:summary="@string/settings_main_scheduler_rssi_criteria_summary"
+			android:dialogTitle="@string/settings_main_scheduler_rssi_criteria_title"
+			android:entries="@array/settings_main_scheduler_rssi_criteria_list_entries"
+			android:entryValues="@array/settings_main_scheduler_rssi_criteria_list_values"/>
+   	    <CheckBoxPreference
+			android:key="settings_main_use_light_theme"
+			android:title="@string/settings_main_use_light_theme_title"
+			android:summary="@string/settings_main_use_light_theme_summary_ena" />
+   	    <CheckBoxPreference
+			android:key="settings_main_force_use_trust_device"
+			android:title="@string/settings_main_force_use_trust_device_title"
+			android:summary="@string/settings_main_force_use_trust_device_summary_ena" />
+</PreferenceScreen>
