@@ -64,7 +64,7 @@ public class MakeShortcutLock extends Activity {
 
         // アクションを設定
         intent.setAction("com.android.launcher.action.INSTALL_SHORTCUT");
-    	
+        setResult(RESULT_OK, intent);
 		return intent;
     }
 }
