@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/AutoPhoneUnlock.iml" filepath="$PROJECT_DIR$/AutoPhoneUnlock.iml" />
-      <module fileurl="file://$PROJECT_DIR$/AutoPhoneUnlock/AutoPhoneUnlock-AutoPhoneUnlock.iml" filepath="$PROJECT_DIR$/AutoPhoneUnlock/AutoPhoneUnlock-AutoPhoneUnlock.iml" />
-    </modules>
-  </component>
-</project>
