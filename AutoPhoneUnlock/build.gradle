@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 23
-    buildToolsVersion "27.0.3"
+    buildToolsVersion '28.0.2'
     defaultConfig {
         applicationId "com.sentaroh.android.AutoPhoneUnlock"
         minSdkVersion 10
@@ -66,6 +66,6 @@ android {
 dependencies {
 //    implementation project(':Utilities')
 //    implementation(name:'Utilities-1.0.5', ext:'aar')
-    implementation files('libs/Utilities-1.0.5.aar')
+    implementation files('libs/Utilities-1.0.10.aar')
     implementation 'com.android.support:appcompat-v7:22.2.1'
 }
